@@ -6,7 +6,7 @@ export default function Home() {
     return (<>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
-            <a href="https://www.google.com/" class="navbar-brand">Simple Tomatoe</a>
+            <a href="https://www.google.com/" className="navbar-brand">Simple Tomatoe</a>
             
 
         </nav>
