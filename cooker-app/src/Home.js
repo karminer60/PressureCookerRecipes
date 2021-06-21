@@ -5,7 +5,7 @@ import Categories from "./Categories.js";
 export default function Home(){
     return(<>
         <div className="navbar navbar-expand-lg navbar-light bg-light">
-             Simple Tomatoe
+             Simple Tomate
         </div>
         <div className="container" >
 
