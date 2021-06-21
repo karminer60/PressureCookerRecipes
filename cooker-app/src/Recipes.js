@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function Recipes(){
     return(
-        <div className="conatainer" >
+        <div className="card bg-warning text-danger" style={{padding:"2rem"}} >
             Recipes
             <Recipe/>
         </div>
