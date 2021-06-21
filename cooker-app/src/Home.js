@@ -2,19 +2,16 @@ import React from 'react';
 import Categories from "./Categories.js";
 
 //set up containers for: categories, recipes, and recipe
-export default function Home() {
-    return (<>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-
-            <a href="https://www.google.com/" className="navbar-brand">Simple Tomatoe</a>
-            
-
-        </nav>
+export default function Home(){
+    return(<>
+        <div className="navbar navbar-expand-lg navbar-light bg-light">
+             Simple Tomatoe
+        </div>
         <div className="container" >
 
-            <Categories />
+            <Categories/>
 
         </div>
-    </>
+        </>
     )
 }
