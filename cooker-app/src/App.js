@@ -1,18 +1,19 @@
 
 import './App.css';
-import Home from './Home.js'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route } from 'react-router-dom';
-
+import Home from './Home.js';
+import {Switch, Route } from 'react-router-dom';
+import Recipe from './Recipe.js';
 function App() {
   return (
     <div className="App">
 
       <Switch>
         <Route path="/">
-          <Home />
+          <Home/>
+        </Route>
+
+        <Route path="/Recipe">
+          <Recipe/>
         </Route>
 
       </Switch>
