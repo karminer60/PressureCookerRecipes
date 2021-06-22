@@ -3,7 +3,7 @@ import Categories from "./Categories.js";
 
 //set up containers for: categories, recipes, and recipe
 export default function Home() {
-    return (<>
+    return (<div className="conatinerfluid">
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{padding:"2rem"}}>
             <div class="container-fluid">
                 <div className="card bg-danger" style={{padding:"1rem"}}>
@@ -15,11 +15,26 @@ export default function Home() {
                 </form>
             </div>
         </nav>
+
+        
+        <div className="container">
+            <div className="card bg-secondary text-white" style={{padding:"5rem"}}>
+                Picture or Intro Here
+            </div>
+
+        </div>
+
+        <div className="container">
+            <div className="card bg-white " style={{padding:"5rem"}}>
+                
+            </div>
+
+        </div>
         <div className="container" >
 
             <Categories />
 
         </div>
-    </>
+    </div>
     )
 }
