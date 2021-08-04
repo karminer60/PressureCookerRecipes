@@ -2,7 +2,7 @@
 import './App.css';
 import Home from './Home.js';
 import {Switch, Route } from 'react-router-dom';
-import Recipe from './Recipe.js';
+
 function App() {
   return (
     <div className="App">
@@ -12,9 +12,9 @@ function App() {
           <Home/>
         </Route>
 
-        <Route path="/Recipe">
+        {/* <Route path="/Recipe">
           <Recipe/>
-        </Route>
+        </Route> */}
 
       </Switch>
 
