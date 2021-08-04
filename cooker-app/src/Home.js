@@ -9,7 +9,7 @@ export default function Home() {
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ padding: "2rem" }}>
             <div class="container-fluid">
                 <div className="">
-                    <a href="https://www.google.com/" className="navbar-brand text-white"> <img src={logoNav} style={{ padding: "1rem" }} /></a>
+                    <a href="https://www.google.com/" className="navbar-brand text-white"> <img src={logoNav} alt="nav-logo" style={{ padding: "1rem" }} /></a>
                 </div>
                 <form className="d-flex">
                     <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" style={{font: "comfortaa"}} />
@@ -31,7 +31,7 @@ export default function Home() {
                 </p>
                 </div>
             <div className="p-2" style={{padding: "5rem", font: "comfortaa"}}>
-                <img src={logoIntro} style={{ width: "20rem", height: "20rem" }} />
+                <img src={logoIntro} alt="logo-intro"style={{ width: "20rem", height: "20rem" }} />
             </div>
 
         </div>

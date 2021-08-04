@@ -12,7 +12,7 @@ export default function Category({ category, image }) {
             </div>
             <div className="col-sm">
                 <Link to="/Recipe">
-                    <img src={image} style={{ width: "20rem", height: "20rem", paddingBottom: "5rem", borderRadius: "1rem"}} />
+                    <img src={image} alt="category" style={{ width: "20rem", height: "20rem", paddingBottom: "5rem", borderRadius: "1rem"}} />
                 </Link>
             </div>
             <div className="col-sm">
