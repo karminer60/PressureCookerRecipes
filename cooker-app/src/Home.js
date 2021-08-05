@@ -1,7 +1,6 @@
 import React from 'react';
 import Dashboard from "./Dashboard.js";
 import logoNav from './assets/logoTomate.png'
-import logoIntro from './assets/logoTomate5.png'
 
 //set up containers for: categories, recipes, and recipe
 export default function Home() {
