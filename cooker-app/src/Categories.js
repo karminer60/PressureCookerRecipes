@@ -16,11 +16,10 @@ let categoriesArray = [ { image: grains, title: "Grains"}, { image: fruits, titl
 
 export default function Categories() {
     return (
-        <div className="container" style={{ padding: "2rem", font: "comfortaa"}} >
+        <div className="d-flex flex-wrap" style={{ padding: "2rem", font: "comfortaa"}} >
             
                 {categoriesArray.map((item)=> <Category category={item.title} image={item.image}/>)}
            
-
         </div>
     )
 }
