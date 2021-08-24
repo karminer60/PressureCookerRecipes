@@ -19,7 +19,7 @@ export default function Home() {
 
 
         <div className="d-flex flex-row">
-            <div className="p-2 card text-center">
+            {/* <div className="p-2 card text-center">
                 <p style={{padding:"1rem", font: "comfortaa"}}>Simple Tomate’s mission is to provide simple instructions for 
                 cooking staple foods such as beans, rice, chicken, soup, yogurt, etc. Our website caters to cooks with a 
                 tight schedule and/or patience that prefer to quickly reference cooking instructions without a narrative or background. 
@@ -28,9 +28,9 @@ export default function Home() {
                 Each staple food recipe includes an ingredient list, instructions, culinary ratios, and the total time it takes to prepare and cook your food. 
                 Thank you for visiting our page! We hope you enjoy each staple food instruction in your unique recipe.
                 </p>
-                </div>
+            </div> */}
             <div className="p-2" style={{padding: "5rem", font: "comfortaa"}}>
-                <img src={logoNav} alt="logo-intro"style={{margingTop:"2rem",  width: "15rem", height: "4rem" }} />
+                {/* <img src={logoNav} alt="logo-intro"style={{margingTop:"2rem",  width: "15rem", height: "4rem" }} /> */}
             </div>
         </div>
 
@@ -39,6 +39,10 @@ export default function Home() {
             <Dashboard />
 
         </div>
+
+        <footer style={{padding: "5rem"}}>
+            Footer goes here
+        </footer>
     </div>
     )
 }
