@@ -6,7 +6,7 @@ export default function Category({ category, image }) {
 
     return (
 
-        <div className="p-2" style={{ margin: "2rem", padding: "2rem", width: "30rem", height: "30rem", font: "comfortaa", backgroundColor: "gainsboro"}}>
+        <div className="p-2 bg-light" style={{ margin: "2rem", padding: "2rem", width: "30rem", height: "30rem", font: "comfortaa", backgroundColor: "gainsboro"}}>
             <div className="" style={{ padding: "2rem"}}>
                 {category}
             </div>
