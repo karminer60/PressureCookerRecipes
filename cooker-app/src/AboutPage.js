@@ -18,7 +18,7 @@ export default function AboutPage() {
                 </p>
             </div>
 
-            <footer className="bg-light" style={{ padding: "3rem", fontSize:"1rem", font: "comfortaa", fontSize: "0.85rem", color: "gray" }}>
+            <footer className="bg-light" style={{ padding: "3rem", font: "comfortaa", fontSize: "0.85rem", color: "gray" }}>
                 <div className="d-flex flex-row">
                     <Link to="/about" className="navAboutLink" style={{ textDecoration: 'none', color: "gray"  }}>
                         About
