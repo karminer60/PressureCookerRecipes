@@ -7,7 +7,7 @@ export default function AboutPage() {
         <div className="container-fluid">
             <NavBar />
             <div className="p-2 card text-center" style={{ }}>
-                <h1>About Simple Tomate</h1>
+                <h2>About Simple Tomate</h2>
                 <p style={{ padding: "1rem", font: "comfortaa" }}>Simple Tomate’s mission is to provide simple instructions for
                     cooking staple foods such as beans, rice, chicken, soup, yogurt, etc. Our website caters to cooks with a
                     tight schedule and/or patience that prefer to quickly reference cooking instructions without a narrative or background.
@@ -18,16 +18,16 @@ export default function AboutPage() {
                 </p>
             </div>
 
-            <footer className="bg-light" style={{ padding: "3rem", fontSize:"1rem", font: "comfortaa"}}>
+            <footer className="bg-light" style={{ padding: "3rem", fontSize:"1rem", font: "comfortaa", fontSize: "0.85rem", color: "gray" }}>
                 <div className="d-flex flex-row">
-                    <Link to="/about" className="navAboutLink" style={{ }}>
+                    <Link to="/about" className="navAboutLink" style={{ textDecoration: 'none', color: "gray"  }}>
                         About
                     </Link>
                 </div>
 
-                <div className="copyRight" style={{ padding: "5rem", font: "comfortaa", fontSize: "0.85rem" }}>
+                <div className="copyRight" style={{ padding: "5rem", font: "comfortaa"}}>
                     <p>
-                        Copyright © 2021 Simple Tomate All rights reserved
+                        Copyright © 2021 Simple Tomate
                     </p>
                 </div>
             </footer>
