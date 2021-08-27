@@ -1,7 +1,7 @@
 
 import './App.css';
 import Home from './Home.js';
-import {Switch, Route } from 'react-router-dom';
+import {Switch, Route} from 'react-router-dom';
 import AboutPage from './AboutPage';
 import RecipesDashboard from './RecipesDashboard';
 
