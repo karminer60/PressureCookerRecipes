@@ -10,7 +10,7 @@ export default function Home() {
         <NavBar/>
         
         <div className="d-flex flex-row">
-            <div className="p-2" style={{ padding: "5rem", font: "comfortaa" }}>
+            <div className="p-2" style={{  font: "comfortaa" }}>
                 {/* <img src={logoNav} alt="logo-intro"style={{margingTop:"2rem",  width: "15rem", height: "4rem" }} /> */}
             </div>
         </div>
