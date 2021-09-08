@@ -16,7 +16,7 @@ let categoriesArray = [ { image: grains, title: "Grains"}, { image: fruits, titl
 
 export default function Categories() {
     return (
-        <div className="d-flex flex-wrap space-evenly" style={{ font: "comfortaa" }} >
+        <div className="d-flex flex-wrap space-evenly" style={{ font: "comfortaa", overflow: "hidden" }} >
             
                 {categoriesArray.map((item)=> <Category category={item.title} image={item.image}/>)}
            
