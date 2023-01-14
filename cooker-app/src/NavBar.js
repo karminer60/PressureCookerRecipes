@@ -5,7 +5,7 @@ import logoNav from './assets/logoTomate.png';
 //functional component
 //export default to reuse component
 export default function NavBarFooter() {
-    //value = state, setValue = function, and useState = empty string
+    //value = state, setValue = function, and initial state = empty string
     const [value, setValue] = useState('');
     const [submitted, setSubmitted] = useState(true);
 
@@ -36,4 +36,3 @@ export default function NavBarFooter() {
         </nav>
     )
 }
-
