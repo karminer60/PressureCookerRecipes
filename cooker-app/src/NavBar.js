@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import {Link} from 'react-router-dom'
 import logoNav from './assets/logoTomate.png';
 
-
+//functional component
+//export default to reuse component
 export default function NavBarFooter() {
-
+    //value = state, setValue = function, and useState = empty string
     const [value, setValue] = useState('');
     const [submitted, setSubmitted] = useState(true);
 
@@ -15,6 +16,7 @@ export default function NavBarFooter() {
             value,
         )
     }
+
     
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ padding: "2rem" }}>
