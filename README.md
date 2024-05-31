@@ -1,6 +1,6 @@
 # PressureCookerRecipes
 
-Deployed site: https://www.simpletomate.com/
+Deployed site: 
 
 Wireframe: https://www.figma.com/file/nExJ3cozho1nLEZUKQhf2Z/Untitled?node-id=0%3A1
 
