@@ -16,8 +16,7 @@ export default function NavBarFooter() {
             value,
         )
     }
-
-    
+ 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ padding: "2rem" }}>
             <div class="container-fluid">
