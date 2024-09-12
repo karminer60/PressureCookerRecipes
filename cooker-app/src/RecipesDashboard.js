@@ -1,17 +1,36 @@
-import React from 'react';
+import React, { startTransition, useEffect, useState } from 'react';
 import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
 
 export default function RecipesDashboard() {
     //JavaScript
-    let recipes = fetch("http://localhost:8081/recipes")
-                .then(data => {
-                    //do something with the data
-                })
-                .catch(error => {
-                    //do something with the error
-                })
+    const [result, setResult] = useState(null);
+    useEffect(() => {
+        // declare the data fetching function
+        const fetchData = async () => {
+            const response = await fetch('http://localhost:8080/api/recipes');
+            if (response.ok) {
+                const data = await response.json();
+                setResult([false, data]);
+            }else{
+                setResult([true, 'error'])
+            }
+        
+        };
+        // call the function
+        fetchData();
+        }, [])
+            
     //React
+    if(!result){
+        return(
+            <div>Fetching</div>
+        )
+    }
+    const [isError, recipes] = result
+    if(isError){
+        return <div>Error</div>
+    }
     return (
         <div className="container-fluid">
             <NavBar />
