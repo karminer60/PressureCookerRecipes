@@ -8,11 +8,15 @@ export default function RecipesDashboard() {
     useEffect(() => {
         // declare the data fetching function
         const fetchData = async () => {
-            const response = await fetch('http://localhost:8080/api/recipes');
-            if (response.ok) {
-                const data = await response.json();
-                setResult([false, data]);
-            }else{
+            try {
+                const response = await fetch('http://localhost:8080/api/recipes');
+                if (response.ok) {
+                    const data = await response.json();
+                    setResult([false, data]);
+                }else{
+                    setResult([true, 'error'])
+                }
+            } catch (err){
                 setResult([true, 'error'])
             }
         
@@ -27,9 +31,13 @@ export default function RecipesDashboard() {
             <div>Fetching</div>
         )
     }
+    //destructuring
     const [isError, recipes] = result
     if(isError){
         return <div>Error</div>
+    }
+    if(result.length === 0){
+        return <div>None Available</div>
     }
     return (
         <div className="container-fluid">
