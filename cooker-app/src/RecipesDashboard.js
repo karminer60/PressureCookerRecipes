@@ -12,11 +12,14 @@ export default function RecipesDashboard() {
                 const response = await fetch('http://localhost:8080/api/recipes');
                 if (response.ok) {
                     const data = await response.json();
+                    console.log({ data });
                     setResult([false, data]);
                 }else{
+                    console.log({ response })
                     setResult([true, 'error'])
                 }
             } catch (err){
+                console.error({ err })
                 setResult([true, 'error'])
             }
         
@@ -36,18 +39,17 @@ export default function RecipesDashboard() {
     if(isError){
         return <div>Error</div>
     }
-    if(result.length === 0){
+    if(recipes.length === 0){
         return <div>None Available</div>
     }
     return (
         <div className="container-fluid">
             <NavBar />
             <div style={{ padding: "5rem" }}>
-                Make a fetch request for all recipes, here
                
                 {
-                 recipes.array.forEach(element => {
-                    console.log(element)
+                 recipes.map(element => {
+                    <div>{element}</div>
             
                 })}
             </div>
